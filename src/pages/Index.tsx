@@ -1,16 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ScrapbookNav from "@/components/ScrapbookNav";
+import ScrapbookHero from "@/components/ScrapbookHero";
+import ScrapbookAbout from "@/components/ScrapbookAbout";
+import ScrapbookExperience from "@/components/ScrapbookExperience";
+import ScrapbookProjects from "@/components/ScrapbookProjects";
+import ScrapbookSkills from "@/components/ScrapbookSkills";
+import ScrapbookContact from "@/components/ScrapbookContact";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background overflow-x-hidden">
+      <ScrapbookNav />
+      <ScrapbookHero />
+      <ScrapbookAbout />
+      <ScrapbookExperience />
+      <ScrapbookProjects />
+      <ScrapbookSkills />
+      <ScrapbookContact />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
