@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 
 const links = [
   { label: "about", href: "#about" },
@@ -20,7 +20,7 @@ const ScrapbookNav = () => {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex gap-6">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <a
               key={l.href}
@@ -30,6 +30,16 @@ const ScrapbookNav = () => {
               {l.label}
             </a>
           ))}
+          <div className="flex gap-2 ml-2 border-l border-border/50 pl-4">
+            <a href="https://github.com/S-rimsha" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors">
+              <Github size={16} />
+            </a>
+            <a href="https://www.linkedin.com/in/rimsha-shaikh237/" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors">
+              <Linkedin size={16} />
+            </a>
+          </div>
         </div>
 
         {/* Mobile toggle */}
@@ -51,6 +61,14 @@ const ScrapbookNav = () => {
               {l.label}
             </a>
           ))}
+          <div className="flex gap-4 pt-3 border-t border-border/50 mt-2">
+            <a href="https://github.com/S-rimsha" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+              <Github size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/rimsha-shaikh237/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+              <Linkedin size={18} />
+            </a>
+          </div>
         </div>
       )}
     </nav>
