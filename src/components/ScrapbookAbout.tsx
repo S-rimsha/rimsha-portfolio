@@ -35,7 +35,7 @@ const ScrapbookAbout = () => {
             </p>
             <p>
               When I'm not coding, you'll find me exploring new technologies, leading teams, 
-              and volunteering as a coordinator at college events.
+              and volunteering as a coordinator at college events and probably exploring the world.
             </p>
           </div>
         </div>
